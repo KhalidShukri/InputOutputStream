@@ -184,28 +184,28 @@ public class Main {
 //        }
 ////        CSV parser
 ////        Write a java program that reads a CSV(Comma Separate Values).Assume that the csv file does not contain any commas within the fields
-        if (args.length != 1){
-            System.out.println("Provide the file Path to the file");
-            return;
-        }
-        String CommaFile = args[0];
-        try (BufferedReader cr = new BufferedReader(new FileReader(CommaFile))) {
-            String line;
-            while ((line = cr.readLine())!= null) {
-                String [] fields = line.split(",");
-                for (String field : fields){
-                    System.out.println(field + "");
-                }
+//        if (args.length != 1){
+//            System.out.println("Provide the file Path to the file");
+//            return;
+//        }
+//        String CommaFile = args[0];
+//        try (BufferedReader cr = new BufferedReader(new FileReader(CommaFile))) {
+//            String line;
+//            while ((line = cr.readLine())!= null) {
+//                String [] fields = line.split(",");
+//                for (String field : fields){
+//                    System.out.println(field + "");
+//                }
+//
+//
+//            }
+//
+//        } catch (IOException e) {
+//            System.out.println("Error Occurred; "+ e.getMessage());
+//        }
 
-
-            }
-
-        } catch (IOException e) {
-            System.out.println("Error Occurred; "+ e.getMessage());
-        }
-
-    }
-}
+//    }
+//}
 //        try (BufferedReader vr = new BufferedReader(new FileReader("values.txt"));BufferedWriter vw = new BufferedWriter(new FileWriter("comma.txt"))) {
 //            String CommaValues;
 //            while ((CommaValues = vr.readLine())!= null) {
@@ -222,4 +222,5 @@ public class Main {
 //
 //
 //    }
-
+    }
+}
